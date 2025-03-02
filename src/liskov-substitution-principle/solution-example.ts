@@ -1,3 +1,15 @@
+/**
+ * Universidad de La Laguna
+ * Escuela Superior de Ingeniería y Tecnología
+ * Grado en Ingeniería Informática
+ * Programación de Aplicaciones Interactivas 2024-2025
+ *
+ * Shape es una clase abstracta que define el método getArea.
+ * Rectangle y Square implementan Shape.
+ * 
+ * @see {@link https://en.wikipedia.org/wiki/Liskov_substitution_principle}
+ */
+
 abstract class Shape {
   abstract getArea(): number;
 }
@@ -41,6 +53,7 @@ class Square extends Shape {
     return this.side * this.side;
   }
 }
+
 function main() {
   let rectangle: Shape = new Rectangle(100, 50);
   console.log(rectangle.getArea()); // 5000
