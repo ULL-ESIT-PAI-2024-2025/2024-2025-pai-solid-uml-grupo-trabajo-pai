@@ -1,6 +1,18 @@
+/**
+ * Universidad de La Laguna
+ * Escuela Superior de Ingeniería y Tecnología
+ * Grado en Ingeniería Informática
+ * Programación de Aplicaciones Interactivas 2024-2025
+ *
+ * Drivable es una clase abstracta que define un método drive.
+ * FuelCar y ElectricCar extienden Drivable y definen un coche de gasolina y un coche eléctrico, respectivamente.
+ * testVehicle recibe un objeto Drivable y llama al método drive.
+ * 
+ * @see {@link https://en.wikipedia.org/wiki/Liskov_substitution_principle}
+ */
+
 abstract class Drivable {
   abstract drive(): void;
-  abstract re
 }
 
 class FuelCar extends Drivable {
