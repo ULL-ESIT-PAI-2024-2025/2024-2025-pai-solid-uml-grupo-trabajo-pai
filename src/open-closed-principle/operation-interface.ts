@@ -13,25 +13,25 @@
 
 // Interface for operations
 interface IOperation {
-  calculate(a: number, b: number): number;
+  calculate(operandA: number, operandB: number): number;
 }
 
 // Concrete operations
 class Sum implements IOperation {
-  calculate(a: number, b: number): number {
-    return a + b;
+  calculate(operandA: number, operandB: number): number {
+    return operandA + operandB;
   }
 }
 
 class Subtract implements IOperation {
-  calculate(a: number, b: number): number {
-    return a - b;
+  calculate(operandA: number, operandB: number): number {
+    return operandA - operandB;
   }
 }
 
 class Multiply implements IOperation {
-  calculate(a: number, b: number): number {
-    return a * b;
+  calculate(operandA: number, operandB: number): number {
+    return operandA * operandB;
   }
 }
 
@@ -43,8 +43,8 @@ class Calculator {
     this.operations = operations;
   }
 
-  calculateAll(a: number, b: number): number[] {
-    return this.operations.map(op => op.calculate(a, b));
+  calculateAll(operandA: number, operandB: number): number[] {
+    return this.operations.map(op => op.calculate(operandA, b));
   }
 }
 
