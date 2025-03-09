@@ -44,7 +44,7 @@ class Calculator {
   }
 
   calculateAll(operandA: number, operandB: number): number[] {
-    return this.operations.map(op => op.calculate(operandA, b));
+    return this.operations.map(op => op.calculate(operandA, operandB));
   }
 }
 
